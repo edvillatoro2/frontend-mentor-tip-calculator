@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- 
+  Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset -->
+
+  <div class="container">
+    <img src="./images/logo.svg" alt="" class="logo">
+    <div class="calculator">
+      <div class="calc-left">
+        <div class="top-title mb35">
+          <h3 class="title mb25">Bill</h3>
+          <div class="input-wrapper">
+            <img src="./images/icon-dollar.svg" alt="dollar-sign">
+            <input type="text" placeholder="0.00" class="input-font" id="input-bill"/>
+          </div>
+        </div>
+        <div class="tip-container mb35">
+          <div class="input-wrapper">
+            <label for="input-tip" class="mb25 title">Select Tip %</label>
+          </div>
+          <div class="tip-wrapper">
+            <div class="btn tip">5%</div>
+            <div class="btn tip">10%</div>
+            <div class="btn active tip">15%</div>
+            <div class="btn tip">25%</div>
+            <div class="btn tip">50%</div>
+            <input type="text" class="input-font" id="custom-tip" placeholder="Custom">
+          </div>
+        </div>
+        <div class="people-container mb35">
+          <div class="top-title-people">
+            <h3 class="title">Number of People</h3>
+            <p class="error">Can't be Zero</p>
+          </div>
+          <div class="input-wrapper">
+            <img src="./images/icon-person.svg" alt="person-icon">
+            <input type="text" placeholder="0" class="input-font" id="input-people"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="total-container">
+        <div class="total-flex-top">
+          <div class="total-wrapper mb25">
+            <div class="total-left">
+              <h3 class="title">Tip Amount</h3>
+              <p class="desc">/ Person</p>
+            </div>
+          <div class="amount"></div>
+          </div>
+          <div class="total-wrapper mb25">
+            <div class="total-left">
+              <h3 class="title">Total</h3>
+              <p class="desc">/ Person</p>
+            </div>
+            <div class="amount"></div>
+          </div>
+        </div>
+        <div class="total-flex-bot">
+          <div class="btn reset">Reset</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Edgar Villatoro</a>.
+  </div> -->
+  <script src="./app.js"></script>
+</body>
+</html>
